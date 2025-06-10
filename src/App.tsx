@@ -2,7 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image } from '@chakra-ui/react'
+import logo from "../assets/images/logo-mark.svg";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,7 +11,10 @@ function App() {
   return (
     <>
       <Box>
-        <Heading>hola</Heading>
+        <Flex>
+          <Image src={logo}/>
+          <Heading>hola</Heading>
+        </Flex>
       </Box>
     </>
   )
